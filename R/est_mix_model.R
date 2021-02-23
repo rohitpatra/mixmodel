@@ -1,4 +1,4 @@
-#' A function to estimate  alp and F.s given a data vector. This also provides inference for alpha 
+#' A function to estimate  mixing proportion and F.s (the cdf for the unknown component) given a data vector from a two component mixture model. This also provides inference for the mixing proportion.
 #'
 #'
 #' @param data the numeric vector. Ideally data from a two component mixture model.
