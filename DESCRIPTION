@@ -1,13 +1,13 @@
 Package: mixmodel
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
-Encoding: UTF-8
+Title: Estimation and Inference in Two-component Mixture Models
+Version: 0.5
+Authors@R: person("Rohit", "Patra", email = "rkumarpatra@gmail.com", role = c("aut", "cre"))
+Description: Computation of the confidence lower bound and estimator for mixing proportion in a two component mixture model. Also estimates the distribution and density of the unknown component without any tuning parameter.
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
 LazyData: true
+Imports: fdrtool,
+        Iso
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat (>= 2.1.0)
