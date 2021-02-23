@@ -8,15 +8,21 @@ bibliography: SigNoise.bib
 
 ---
 
-```{r setup, include=FALSE}
+In this article, we discuss the computation of the confidence lower bound (see Section 4) and estimator (see Section 3) developed in @ps16. We also discuss the appropriate choice for the tuning parameter involved.
+
+To download the R package use the following in R:
+
+```{r setup}
+library(devtools)
+devtools::install_github(repo = "rohitpatra/mixmodel")
 library(mixmodel)
 ```
 
 
-In this article, we discuss the computation of the confidence lower bound (see Section 4) and estimator (see Section 3) developed in @ps16. We also discuss the appropriate choice for the tuning parameter involved. The codes used here can be downloaded from [here.](http://stat.ufl.edu/~rohitpatra/Code/mixmodel.zip)
 
-
-We first generate an i.i.d sample of size $n= 5000$ from $$F = \alpha_0 * \text{Beta}(1,10) + (1- \alpha_0 ) \text{Unif}(0,1),$$ where $\alpha_0 =.1.$
+We first generate an i.i.d sample of size $n= 5000$ from $$
+F = \alpha_0 * \text{Beta}(1,10) + (1- \alpha_0 ) \text{Unif}(0,1),
+$$ where $\alpha_0 =.1.$
 ```{r data_gen}
 data.gen<- function( n, alpha){
 	ind<- rbinom(n, 1, alpha)
