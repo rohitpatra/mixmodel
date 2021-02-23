@@ -86,7 +86,7 @@ print(est.default)
 ```
 
     ## Call:mix.model(data = data.1, method = "fixed", gridsize = 600)
-    ## [1] "Estimate of alp is 0.0816666666666667"
+    ## [1] "Estimate of alp is 0.0766666666666667"
     ## [1] " The chosen value c_n is 0.182690266560073"
 
 ``` r
@@ -119,7 +119,7 @@ est.cv <- mix.model(data.1, method = "cv", gridsize = 600)
     ## is Uniform(0,1)
 
     ## [1] "Expected time for completion"
-    ## Time difference of 1.633801 secs
+    ## Time difference of 1.687224 secs
 
 ``` r
 print(est.cv)
@@ -127,7 +127,7 @@ print(est.cv)
 
     ## Call:mix.model(data = data.1, method = "cv", gridsize = 600)
     ## [1] "Estimate of alp is 0.0933333333333333"
-    ## [1] " The chosen value c_n is 0.148717258404811"
+    ## [1] " The chosen value c_n is 0.111994669470009"
 
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 

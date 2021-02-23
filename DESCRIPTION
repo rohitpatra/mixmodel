@@ -11,3 +11,5 @@ Imports: fdrtool,
 RoxygenNote: 7.1.0
 Suggests: 
     testthat (>= 2.1.0)
+URL: https://github.com/rohitpatra/mixmodel
+BugReports: https://github.com/rohitpatra/mixmodel

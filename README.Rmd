@@ -12,7 +12,7 @@ In this article, we discuss the computation of the confidence lower bound (see S
 
 To download the R package use the following in R:
 
-```{r setup}
+```{r setup }
 library(devtools)
 devtools::install_github(repo = "rohitpatra/mixmodel")
 library(mixmodel)
