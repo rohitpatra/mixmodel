@@ -4,7 +4,7 @@
 \alias{mix.model}
 \alias{print.mix.model}
 \alias{plot.mix.model}
-\title{A function to estimate  alp and F.s given a data vector. This also provides inference for alpha}
+\title{A function to estimate  mixing proportion and F.s (the cdf for the unknown component) given a data vector from a two component mixture model. This also provides inference for the mixing proportion.}
 \usage{
 mix.model(
   data,
@@ -48,7 +48,7 @@ An object of class `mix.model`, a list including the elements:
 \item{cv.out}{An object of class `cv.mix.model`. The object is NULL if method is `fixed`.}
 }
 \description{
-A function to estimate  alp and F.s given a data vector. This also provides inference for alpha
+A function to estimate  mixing proportion and F.s (the cdf for the unknown component) given a data vector from a two component mixture model. This also provides inference for the mixing proportion.
 }
 \examples{
 data.gen<- function( n, alpha){
